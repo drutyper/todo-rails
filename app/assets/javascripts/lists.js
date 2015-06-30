@@ -33,7 +33,7 @@ $(document).on("ready", function(){
         },
         error: errorHandler,
         success: function(data) {
-          var new_item = $("<li class='task' data-task-id='" + data.id + "'>" + data.content + "</li>")
+          var new_item = $("<li class='task' data-task-id='" + data.id + "'>" + data.content + "<button>Delete</button></li>")
 
           new_item.on("click", taskClickHandler)
 
